@@ -57,8 +57,14 @@ header {
         /* background: pink; */
         justify-content: flex-end;
     }
-    #sub-header-1 ul li {
-        /* background: green; */
+    #sub-header-1 ul li a{
+        padding: 5px 10px;
+        border: 2px solid transparent;
+    }
+
+    #sub-header-1 ul li a:hover{
+        border: 2px solid #287BE0;
+        border-radius: 4px;
     }
 
 #hero {
@@ -87,9 +93,14 @@ header {
 
 }
 
+#hero button {
+    border: 3px solid rgba(220,001, 23, 0);
+}
 #hero button:hover {
     background-color: #fff;
     color: #17467E;
+    border: 3px solid #287BE0;
+
 }
 #hero video {
     position: absolute;
@@ -117,4 +128,57 @@ header {
     background: rgba(0,0,0,.5);
     flex:1;
     width: 100%;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+    flex-direction: column;
+    width: 960px;
+    gap: 15px;
+    /* overflow: hidden; */
+    /* border: 3px dotted #f00; */
+    margin: 40px auto 40px auto;
+}
+#services article {
+    overflow: hidden;
+}
+
+#services article figure {
+    height: 300px;
+    /* border: 2px dotted #287BE0; */
+    overflow: hidden;
+}
+
+#services article h3 {
+    margin: 15px 0;
+}
+
+#services h1,
+#services footer {
+    grid-column: span 3;
+}
+
+#services footer {
+    margin-top: 30px;
+    text-align: right;
+}
+
+#services footer a {
+    padding: 10px 20px;
+    background-color: #E04E3F;
+    border: 2px solid transparent;
+    color: #000;
+    border-radius: 10px;
+}
+
+#services footer a:hover {
+    background-color: #fff;
+    border: 2px solid #E04E3F;
+
+}
+
+#services h1 {
+    /* text-decoration: underline; */
 }

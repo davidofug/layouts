@@ -1,0 +1,120 @@
+/* Reset defaults 
+Color generator https://color.adobe.com/create/color-wheel
+Shadow generator
+gradient generator
+----
+#17467E //Dark blue
+#287BE0 //Light blue
+#E04E3F //Red shade
+Variables
+Columns
+Media queries
+*/
+*,
+*:after,
+*:before
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #17467E;
+}
+ul {
+    list-style-type: none;
+}
+
+/* End reset*/
+header {
+    /* background: green; */
+}
+
+#sub-header-1 {
+    display: grid;
+    grid-template-columns: 250px auto 300px;
+    width: 960px;
+    margin:0 auto;
+    /* background: red; */
+    padding: 15px 0;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+    #sub-header-1 ul {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        /* background: yellow; */
+    }
+    #sub-header-1 nav {
+        /* display: inline-block; */
+        /* background: aqua; */
+    }
+    #sub-header-1 nav:last-child ul {
+        /* background: pink; */
+        justify-content: flex-end;
+    }
+    #sub-header-1 ul li {
+        /* background: green; */
+    }
+
+#hero {
+    background: #17467E;
+    background-image: url('../media/imgs/space-hero-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px ;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    color: #fff;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#hero button {
+    background-color: #E04E3F;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor:pointer;
+
+}
+
+#hero button:hover {
+    background-color: #fff;
+    color: #17467E;
+}
+#hero video {
+    position: absolute;
+    top: -20%;
+    /* bottom: 0;
+    right: 0;
+    left:0; */
+    /* min-height: 100%;
+    max-height: 400px;
+    min-width: 100%; */
+    /* width: 100vw; */
+
+}
+
+#hero #layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0,0,0,.5);
+    flex:1;
+    width: 100%;
+}

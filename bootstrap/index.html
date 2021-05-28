@@ -43,96 +43,108 @@
             </button>
         </div>
     </nav>
-    <header>
-        <section id="hero">
-            <video autoplay loop>
-                <source src="media/videos/Space-hero-video.mp4" type="video/mp4">
-            </video>
-            <section id="layer">
-                <h1>Go with us to mars at $5m.</h1>
-                <button>Buy now</button>
-            </section>
+
+    <header id="hero" class="overflow-hidden position-relative d-flex flex-column">
+        <video class="position-absolute" autoplay loop>
+            <source src="media/videos/Space-hero-video.mp4" type="video/mp4">
+        </video>
+        <section id="layer" class="d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-white">Go with us to mars at $5m.</h1>
+            <button class="btn btn-danger">Buy Ticket</button>
         </section>
     </header>
-    <main id="services">
-        <h1>Our Services</h1>
-        <article>
-            <figure>
-                <img src="media/imgs/falcon9.jpeg" alt="Falcon-9-photo">
-            </figure>
-            <h3>Falcon 9</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto sed debitis sequi modi magnam at ducimus! Tempora reiciendis, error facere ipsa soluta ut, adipisci earum pariatur itaque nihil illo.</p>
-        </article>
-        <article>
-            <figure>
-                <img src="media/imgs/falcon-heavy.jpeg" alt="Falcon-heavy-photo">
-            </figure>
-            <h3>Falcon Heavy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde at odio placeat nobis accusantium a consequatur harum ipsa fugit similique nesciunt, beatae exercitationem ab aliquid nihil est nam! Animi?</p>
-        </article>
-        <article>
-            <figure>
-                <img src="media/imgs/dragon.jpeg" alt="Dragon-photo">
-            </figure>
-            <h3>Dragon</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sequi inventore impedit voluptas tempora error a provident mollitia voluptatibus possimus sit aliquam est quia corrupti laudantium veritatis laborum ratione eum tempore. Reiciendis laborum incidunt cum consequatur in ullam quidem necessitatibus voluptates saepe eveniet, unde quos molestias fugit animi aspernatur molestiae!</p>
-        </article>
-        <footer>
-            <a href="#">More</a>
-        </footer>
-    </main>
+    
+    <section id="services" class="container mb-5">
+        <h1 class="text-center mt-4 mb-4">Our Services</h1>
+        <main class="row">
+            <article class="col-4">
+                <figure class="overflow-hidden">
+                    <img src="media/imgs/falcon9.jpeg" alt="Falcon-9-photo">
+                </figure>
+                <h3>Falcon 9</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at ipsa facere nulla corporis ad. Reiciendis officiis, cupiditate harum laboriosam suscipit numquam eius in fuga, pariatur maxime vitae facilis adipisci excepturi, eos at voluptatum rerum fugiat. Libero quaerat sequi quibusdam accusantium autem nostrum repudiandae molestias debitis rem. Cumque, nam dolores.
+                </p>            
+            </article>
+            <article class="col-4">
+                <figure class="overflow-hidden">
+                    <img src="media/imgs/falcon-heavy.jpeg" alt="Falcon-heavy-photo">
+                </figure>
+                <h3>Falcon Heavy</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at ipsa facere nulla corporis ad. Reiciendis officiis, cupiditate harum laboriosam suscipit numquam eius in fuga, pariatur maxime vitae facilis adipisci excepturi, eos at voluptatum rerum fugiat. Libero quaerat sequi quibusdam accusantium autem nostrum repudiandae molestias debitis rem. Cumque, nam dolores.
+                </p>
+            </article>
+            <article class="col-4">
+                <figure class="overflow-hidden">
+                    <img src="media/imgs/dragon.jpeg" alt="Dragon-photo">
+                </figure>
+                <h3>Dragon</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at ipsa facere nulla corporis ad. Reiciendis officiis, cupiditate harum laboriosam suscipit numquam eius in fuga, pariatur maxime vitae facilis adipisci excepturi, eos at voluptatum rerum fugiat. Libero quaerat sequi quibusdam accusantium autem nostrum repudiandae molestias debitis rem. Cumque, nam dolores.
+                </p>
+            </article>
+
+        </main>
+
+        <p class="text-end">
+            <a class="btn btn-info text-white text-end" href="#">More</a>
+        </p>
+
+    </section>
+
     <!--footer>section*2 -->
-    <footer id="main-footer">
-        <section id = "footer-section-1">
-            <!-- (article>figure>img)+p -->
-            <article>
-                <firgure>
-                    <img src="media/imgs/spacex-logo.png" alt="Space-X">
-                    <p>Space-X specialises in making robots.</p>
-                </firgure>
-            </article>
-            <!-- (nav>h2{Quick menu})+ul>(li>a)*4 -->
-            <nav>
-                <h2>Quick menu</h2>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- article>(h2{Contact})+form:post -->
-            <article>
-                <h2>Contact </h2>
-                <form action="#" method="post">
-                    <div>
-                        <label for="fullname">Name</label><br/>
-                        <input type="text" name="fullname" id="fullname">
-                    </div>
-                    
-                    <div>
-                        <label for="email">Email</label><br/>
-                            <input type="text" name="email" id="email">
-                        </label>
-                    </div>
-
-                    <div>
-                        <label for="message">Message</label><br/>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <button class="btn success">Send</button>
-                </form>
-            </article>
+    <footer>
+        <section class="bg-light pt-3 pb-3">
+            <section class="container d-flex justify-content-between" >
+                <!-- (article>figure>img)+p -->
+                <article>
+                    <firgure>
+                        <img src="media/imgs/spacex-logo.png" alt="Space-X">
+                        <p>Space-X specialises in making robots.</p>
+                    </firgure>
+                </article>
+                <!-- (nav>h2{Quick menu})+ul>(li>a)*4 -->
+                <nav>
+                    <h2>Quick menu</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- article>(h2{Contact})+form:post -->
+                <article>
+                    <h2>Contact</h2>
+                    <form action="#" method="post">
+                        <div>
+                            <label for="fullname">Name</label><br/>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email</label><br/>
+                                <input type="text" name="email" id="email">
+                            </label>
+                        </div>
+    
+                        <div>
+                            <label for="message">Message</label><br/>
+                            <textarea name="message" id="message" cols="30" rows="3"></textarea>
+                        </div>
+    
+                        <button class="btn btn-success">Send</button>
+                    </form>
+                </article>
+            </section>
         </section>
-        <section id ="copyright-section">
-            <div>
-                <p>&copy Copyright 2021</p>
-            </div>
-            <div>
-                <button>Top</button>
-            </div>
+
+        <section class="container d-flex justify-content-between pt-2 pb-2" >
+            <span>&copy; Copyright 2021</span>
+            <a href="#top" class="btn btn-info">Top</a>
         </section>
     </footer>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

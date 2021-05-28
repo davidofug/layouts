@@ -1,3 +1,18 @@
 .navbar-brand-container {
     margin:0;
 }
+#hero {
+    height: 600px;
+}
+header > video {
+    z-index: 100;
+}
+#layer {
+    z-index: 101;
+    background-color: rgba(0,0,0,0.4);
+    height: 600px;
+}
+
+#services article figure {
+    height: 300px;
+}
